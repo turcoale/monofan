@@ -1,0 +1,48 @@
+autostart = False
+version = 0.8.6
+[127.0.0.1:7200]
+    workingdir = working
+    udp = 10001
+    [[7200]]
+        image = /home/turco/Descargas/c7200-ik9s-mz.124-17a(2).image
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R1]]
+        console = 2101
+        aux = 2501
+        slot0 = C7200-IO-FE
+        f0/0 = nio_gen_eth:wlan0
+        slot1 = PA-FE-TX
+        slot2 = PA-2FE-TX
+        cnfg = configs/R1.cfg
+        x = -104.0
+        y = 18.0
+        z = 1.0
+[vbox 127.0.0.1:11525]
+    workingdir = working
+    udp = 20900
+    [[VBoxDevice]]
+        image = Debian3
+        nics = 2
+    [[VBOX debian2]]
+        image = Debian2
+        x = -177.5
+        y = -142.5
+        z = 1.0
+    [[VBOX debian]]
+        image = Debian
+        x = -99.5
+        y = -177.5
+        z = 1.0
+    [[VBOX debian3]]
+        x = -12.5
+        y = -139.5
+        z = 1.0
+[GNS3-DATA]
+    configs = configs
+    workdir = working
+    [[Cloud C1]]
+        x = -103.5
+        y = 128.0
+        z = 1.0
+        connections = R1:f0/0:nio_gen_eth:wlan0
