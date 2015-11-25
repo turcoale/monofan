@@ -1,0 +1,849 @@
+EESchema-DOCLIB  Version 2.0  Date: 24/5/2009-14:43:30
+#
+$CMP SIOV-S20K150
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K150
+#
+$CMP SIOV-S14K420
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K420
+#
+$CMP SIOV-S14K17
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K17
+#
+$CMP SIOV-S05K50
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K50
+#
+$CMP SIOV-S14K75
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K75
+#
+$CMP SIOV-S10K140
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K140
+#
+$CMP SIOV-S05K14
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K14
+#
+$CMP SIOV-S05K17
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K17
+#
+$CMP SIOV-S14K550
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K550
+#
+$CMP SIOV-S14K275
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K275
+#
+$CMP SIOV-S10K320
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K320
+#
+$CMP SIOV-S10K175
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K175
+#
+$CMP SIOV-S07K140
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K140
+#
+$CMP SIOV-S07K300
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K300
+#
+$CMP SIOV-S20K25
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K25
+#
+$CMP SIOV-S14K11
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K11
+#
+$CMP SIOV-S05K420
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K420
+#
+$CMP SIOV-S07K20
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K20
+#
+$CMP SIOV-S10K60
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K60
+#
+$CMP SIOV-S10K95
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K95
+#
+$CMP SIOV-S10K30
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K30
+#
+$CMP SIOV-S07K175
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K175
+#
+$CMP SIOV-S14K10001
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K10001
+#
+$CMP SIOV-S20K50
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K50
+#
+$CMP SIOV-S10K625
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K625
+#
+$CMP SIOV-S05K300
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K300
+#
+$CMP SIOV-S10K50
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K50
+#
+$CMP SIOV-S14K150
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K150
+#
+$CMP SIOV-S14K140
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K140
+#
+$CMP SIOV-S20K75
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K75
+#
+$CMP SIOV-S10K20
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K20
+#
+$CMP SIOV-S20K140
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K140
+#
+$CMP SIOV-S14K130
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K130
+#
+$CMP SIOV-S07K17
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K17
+#
+$CMP SIOV-S14K680
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K680
+#
+$CMP SIOV-S20K320
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K320
+#
+$CMP SIOV-S07K420
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K420
+#
+$CMP SIOV-S10K230
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K230
+#
+$CMP SIOV-S10K460
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K460
+#
+$CMP SIOV-S07K275
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K275
+#
+$CMP SIOV-S07K150
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K150
+#
+$CMP SIOV-S14K95
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K95
+#
+$CMP SIOV-S05K20
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K20
+#
+$CMP SIOV-S14K20
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K20
+#
+$CMP SIOV-S07K250
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K250
+#
+$CMP SIOV-S05K250
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K250
+#
+$CMP SIOV-S10K385
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K385
+#
+$CMP SIOV-S10K275
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K275
+#
+$CMP SIOV-S05K175
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K175
+#
+$CMP SIOV-S10K75
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K75
+#
+$CMP SIOV-S07K50
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K50
+#
+$CMP SIOV-S05K75
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K75
+#
+$CMP SIOV-S05K230
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K230
+#
+$CMP SIOV-S07K95
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K95
+#
+$CMP SIOV-S05K40
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K40
+#
+$CMP SIOV-S10K510
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K510
+#
+$CMP SIOV-S07K385
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K385
+#
+$CMP SIOV-S07K30
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K30
+#
+$CMP SIOV-S10K14
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K14
+#
+$CMP SIOV-S05K440
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K440
+#
+$CMP SIOV-S14K250
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K250
+#
+$CMP SIOV-S10K150
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K150
+#
+$CMP SIOV-S05K140
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K140
+#
+$CMP SIOV-S20K17
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K17
+#
+$CMP SIOV-S07K230
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K230
+#
+$CMP SIOV-S20K30
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K30
+#
+$CMP SIOV-S20K10001
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K10001
+#
+$CMP SIOV-S05K35
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K35
+#
+$CMP SIOV-S07K25
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K25
+#
+$CMP SIOV-S20K275
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K275
+#
+$CMP SIOV-S07K75
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K75
+#
+$CMP SIOV-S05K95
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K95
+#
+$CMP SIOV-S20K385
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K385
+#
+$CMP SIOV-S05K385
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K385
+#
+$CMP SIOV-S10K17
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K17
+#
+$CMP SIOV-S05K60
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K60
+#
+$CMP SIOV-S14K175
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K175
+#
+$CMP SIOV-S20K11
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K11
+#
+$CMP SIOV-S07K130
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K130
+#
+$CMP SIOV-S14K40
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K40
+#
+$CMP SIOV-S05K460
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K460
+#
+$CMP SIOV-S10K550
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K550
+#
+$CMP SIOV-S20K95
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K95
+#
+$CMP SIOV-S14K30
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K30
+#
+$CMP SIOV-S05K115
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K115
+#
+$CMP SIOV-S20K14
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K14
+#
+$CMP SIOV-S07K440
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K440
+#
+$CMP SIOV-S14K14
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K14
+#
+$CMP SIOV-S20K20
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K20
+#
+$CMP SIOV-S20K550
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K550
+#
+$CMP SIOV-S10K420
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K420
+#
+$CMP SIOV-S20K420
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K420
+#
+$CMP SIOV-S10K440
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K440
+#
+$CMP SIOV-S14K25
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K25
+#
+$CMP SIOV-S14K60
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K60
+#
+$CMP SIOV-S14K115
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K115
+#
+$CMP SIOV-S05K130
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K130
+#
+$CMP SIOV-S20K510
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K510
+#
+$CMP SIOV-S20K440
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K440
+#
+$CMP SIOV-S05K150
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K150
+#
+$CMP SIOV-S05K25
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K25
+#
+$CMP SIOV-S14K50
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K50
+#
+$CMP SIOV-S14K625
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K625
+#
+$CMP SIOV-S20K680
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K680
+#
+$CMP SIOV-S20K230
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K230
+#
+$CMP SIOV-S14K300
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K300
+#
+$CMP SIOV-S10K130
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K130
+#
+$CMP SIOV-S20K35
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K35
+#
+$CMP SIOV-S20K115
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K115
+#
+$CMP SIOV-S20K625
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K625
+#
+$CMP SIOV-S10K40
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K40
+#
+$CMP SIOV-S10K250
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K250
+#
+$CMP SIOV-S20K130
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K130
+#
+$CMP SIOV-S10K680
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K680
+#
+$CMP SIOV-S20K250
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K250
+#
+$CMP SIOV-S14K385
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K385
+#
+$CMP SIOV-S14K440
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K440
+#
+$CMP SIOV-S07K115
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K115
+#
+$CMP SIOV-S20K175
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K175
+#
+$CMP SIOV-S07K35
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K35
+#
+$CMP SIOV-S07K460
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K460
+#
+$CMP SIOV-S07K14
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K14
+#
+$CMP SIOV-S14K460
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K460
+#
+$CMP SIOV-S20K300
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K300
+#
+$CMP SIOV-S14K35
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K35
+#
+$CMP SIOV-S14K320
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K320
+#
+$CMP SIOV-S10K11
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K11
+#
+$CMP SIOV-S20K460
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K460
+#
+$CMP SIOV-S10K25
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K25
+#
+$CMP SIOV-S20K40
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K40
+#
+$CMP SIOV-S05K275
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K275
+#
+$CMP SIOV-S14K510
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K510
+#
+$CMP SIOV-S20K60
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S20
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S20K60
+#
+$CMP SIOV-S10K300
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K300
+#
+$CMP SIOV-S07K40
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K40
+#
+$CMP SIOV-S14K230
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S14
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S14K230
+#
+$CMP SIOV-S07K11
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K11
+#
+$CMP SIOV-S05K30
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S05
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S05K30
+#
+$CMP SIOV-S10K115
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K115
+#
+$CMP SIOV-S10K35
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S10
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S10K35
+#
+$CMP SIOV-S07K60
+K SIOV metal oxide varistor 
+D VARISTOR SIOV S07
+F siov/SIOV_Leaded_Standard.pdf
+$ENDCMP SIOV-S07K60
+#
+#End Doc Library

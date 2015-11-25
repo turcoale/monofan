@@ -1,0 +1,9 @@
+PCBNEW-LibDoc----V1  24/5/2009-13:10:47
+#
+$MODULE SG
+Li SG
+Cd Resitance 3 pas
+Kw R
+$EndMODULE
+#
+$EndLIBDOC
