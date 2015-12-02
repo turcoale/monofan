@@ -1,0 +1,363 @@
+Cmp-Mod V01 Created by PcbNew   date = mar 01 dic 2015 08:06:34 ART
+
+BeginCmp
+TimeStamp = 565C4CD9
+Path = /5653A4FA
+Reference = C1;
+ValeurCmp = 0.1 uF;
+IdModule  = locales:C1;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4CDF
+Path = /56539B1C
+Reference = C2;
+ValeurCmp = 0.1 uF;
+IdModule  = locales:C1;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4CE5
+Path = /5652FB46
+Reference = C3;
+ValeurCmp = 10 uF;
+IdModule  = locales:C1V5;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4CEB
+Path = /5652FB47
+Reference = C4;
+ValeurCmp = 0,1 uF;
+IdModule  = locales:C1;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4CF1
+Path = /5652FB50
+Reference = C5;
+ValeurCmp = 0,1 uF;
+IdModule  = locales:C1;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4CF7
+Path = /5652FB49
+Reference = C6;
+ValeurCmp = 470 uF;
+IdModule  = locales:C1V8;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4CFD
+Path = /5652FB4B
+Reference = C7;
+ValeurCmp = 0.33 uF;
+IdModule  = locales:C1;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D03
+Path = /5653FAB7
+Reference = C8;
+ValeurCmp = C;
+IdModule  = locales:C1;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D09
+Path = /5652FB41
+Reference = C9;
+ValeurCmp = 0.1 uF;
+IdModule  = locales:C1;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D0F
+Path = /5652FB4C
+Reference = C10;
+ValeurCmp = 0.01 uF;
+IdModule  = locales:C1;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D15
+Path = /56536527
+Reference = C12;
+ValeurCmp = 0.022 uF;
+IdModule  = locales:C1;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D1D
+Path = /5652FB55
+Reference = D1;
+ValeurCmp = BRIDGE;
+IdModule  = locales:Bridge-rond;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D23
+Path = /5653E32C
+Reference = D2;
+ValeurCmp = D;
+IdModule  = Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D2B
+Path = /5652FB8E
+Reference = D3;
+ValeurCmp = Led_RGB_CA;
+IdModule  = LEDs:LED-RGB-5MM_Common_Cathode;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D31
+Path = /565377BB
+Reference = D4;
+ValeurCmp = 1N4148;
+IdModule  = Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D37
+Path = /56546A98
+Reference = D5;
+ValeurCmp = DIODE;
+IdModule  = Diodes_ThroughHole:Diode_DO-41_SOD81_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D3D
+Path = /5653C692
+Reference = JP1;
+ValeurCmp = JUMPER;
+IdModule  = Connect:PINHEAD1-2;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D43
+Path = /565407C1
+Reference = JP2;
+ValeurCmp = JUMPER;
+IdModule  = Connect:PINHEAD1-2;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D49
+Path = /5653F0A6
+Reference = JP3;
+ValeurCmp = JUMPER;
+IdModule  = Connect:PINHEAD1-2;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D4F
+Path = /5652FB53
+Reference = P1;
+ValeurCmp = CONN_01X02;
+IdModule  = locales:PHOENIX_MSTBA2,54-G_2;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D55
+Path = /56539AC7
+Reference = P2;
+ValeurCmp = CONN_01X02;
+IdModule  = locales:PHOENIX_MSTBA2,54-G_2;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D5B
+Path = /5652FB87
+Reference = P3;
+ValeurCmp = CONN_01X02;
+IdModule  = locales:PHOENIX_MSTBA2,54-G_2;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D65
+Path = /5652FB44
+Reference = P4;
+ValeurCmp = BDM;
+IdModule  = Pin_Headers:Pin_Header_Straight_2x03;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D6C
+Path = /5653DEDA
+Reference = P5;
+ValeurCmp = CONN_01X03;
+IdModule  = Connect:bornier3;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D72
+Path = /56532EF0
+Reference = P6;
+ValeurCmp = CONN_01X02;
+IdModule  = Connect:bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D78
+Path = /56539ACD
+Reference = R1;
+ValeurCmp = 10k;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D7E
+Path = /5652FB88
+Reference = R2;
+ValeurCmp = 10k;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D84
+Path = /56540E52
+Reference = R3;
+ValeurCmp = R;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D8A
+Path = /5653F285
+Reference = R4;
+ValeurCmp = R;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D90
+Path = /5652FB42
+Reference = R5;
+ValeurCmp = 10K;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D96
+Path = /565364CA
+Reference = R7;
+ValeurCmp = 47;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4D9C
+Path = /5652FB8A
+Reference = R8;
+ValeurCmp = 1k;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4DA2
+Path = /565489AE
+Reference = R10;
+ValeurCmp = 10k;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4DA8
+Path = /565376F6
+Reference = R11;
+ValeurCmp = 220;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4DAF
+Path = /5652FB4E
+Reference = RV1;
+ValeurCmp = POT;
+IdModule  = Potentiometers:Potentiometer_Trimmer-Suntan-TSR-3386P;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4DB7
+Path = /5652FB52
+Reference = T1;
+ValeurCmp = TRANSFO;
+IdModule  = locales:TFCOBSIL2209VCA200mA;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4DBE
+Path = /5652FB48
+Reference = U1;
+ValeurCmp = 78L05;
+IdModule  = Power_Integrations:TO-220;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4DD6
+Path = /5652FB51
+Reference = U2;
+ValeurCmp = MC9S08SH8;
+IdModule  = Housings_DIP:DIP-20_W7.62mm_LongPads;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4DE2
+Path = /56544D13
+Reference = U4;
+ValeurCmp = LM311N;
+IdModule  = Housings_DIP:DIP-8_W7.62mm_LongPads;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4DEA
+Path = /56531DBF
+Reference = U5;
+ValeurCmp = SSR_SHARP;
+IdModule  = locales:SSR-SHARP;
+EndCmp
+
+BeginCmp
+TimeStamp = 565C4EDB
+Path = 
+Reference = REF**;
+ValeurCmp = DISIPADOR;
+IdModule  = locales:DISIPADOR;
+EndCmp
+
+BeginCmp
+TimeStamp = 566293DF
+Path = 
+Reference = REF**;
+ValeurCmp = PAD;
+IdModule  = locales:PAD;
+EndCmp
+
+BeginCmp
+TimeStamp = 566293ED
+Path = 
+Reference = REF**;
+ValeurCmp = PAD;
+IdModule  = locales:PAD;
+EndCmp
+
+BeginCmp
+TimeStamp = 566293F6
+Path = 
+Reference = REF**;
+ValeurCmp = PAD;
+IdModule  = locales:PAD;
+EndCmp
+
+BeginCmp
+TimeStamp = 566293FF
+Path = 
+Reference = REF**;
+ValeurCmp = PAD;
+IdModule  = locales:PAD;
+EndCmp
+
+EndListe
