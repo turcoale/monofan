@@ -29,18 +29,33 @@
 #include "PE_Error.h"
 #include "PE_Const.h"
 #include "IO_Map.h"
+
+#define NORMAL 1
+#define SETPOINT 0
+#define TIMEINIT 190
+#define OK 1
+
+
 byte zc;
 int ticks, actual;
 int seg;
-byte alarma;
 byte mode;
+volatile word AD1_OutV;                /* Sum of measured values */
+
+
+static const int temp[] = {322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,322,321,318,315,312,309,306,303,300,297,294,291,288,285,282,279,276,273,270,267,264,261,258,255,252,249,246,243,240,237,234,231,228,225,222,219,216,213,210,207,204,201,198,195,192,189,186,183,180,177,174,171,168,165,162,159,156,153,150,147,144,141,138,135,132,129,126,123,120,117,114,111,108,105,102,99,96,93,90,87,84,81,78,75,72,69,66,63,60,57,54,51,48,45,42,39,36,33,30,27,24,21,18,15,12,9,6,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+
+
+byte ReadInput(word *values);
+byte ReadSetPoint(word *values);
 
 
 
-byte ReadSetTime(void);
-void SetDisp(byte disparo);
+void SetDisp(int disparo);
 void Delay1s(byte segs);
 byte ReadMode(void);
+word interm;
+
 
 /* User includes (#include below this line is not maintained by Processor Expert) */
 
@@ -57,18 +72,34 @@ void main(void)
 
 
 //valor minimo cero, valor maximo 590 ancho del pulso 31
+mode = NORMAL;
 
-alarma = 0;
-PTCD_PTCD0 = 1;
-Delay1s(5);
-mode = 0;
-
-for(;;){
-SetDisp(ReadSetTime());
-mode = ReadMode();
-
-
+switch(mode)
+{
+  case NORMAL : 
+  {
+    PTCD_PTCD0 = 1;
+    Delay1s(TIMEINIT);
+  
+    for(;;){
+            ReadInput(&interm);
+            SetDisp(temp[interm]);
+           } 
+  
+  }    break;
+  
+  case SETPOINT : 
+  {
+    PTCD_PTCD0 = 1;
+    Delay1s(5);
+    for(;;){
+            ReadSetPoint(&interm);
+            SetDisp(interm);
+           }
+  
+  }    break;
 }
+
   /*** Don't write any code pass this line, or it will be deleted during code generation. ***/
   /*** Processor Expert end of main routine. DON'T MODIFY THIS CODE!!! ***/
   for(;;){}
@@ -85,27 +116,41 @@ mode = ReadMode();
 ** ###################################################################
 */
 
-byte ReadSetTime(void){
-ADCCFG = 0b00000000;
+byte ReadInput(word *values){
+
+ADCCFG = 0b00001000;
+ADCSC1 = 0b00001010;
+
+while(ADCSC2_ADACT);
+while(!ADCSC1_COCO); 
+
+((TWREG volatile*)(&AD1_OutV))->b.high = ADCRH; /* Save measured value */
+((TWREG volatile*)(&AD1_OutV))->b.low = ADCRL; /* Save measured value */
+
+*values = (word)((AD1_OutV));   /* Save measured values to the output buffer */
+  
+return OK;
+}
+
+byte ReadSetPoint(word *values){
+
+ADCCFG = 0b00001000;
 ADCSC1 = 0b00001011;
 
- while(ADCSC2_ADACT);
- while(!ADCSC1_COCO); 
-         
-  
- return ADCRL; 
+while(ADCSC2_ADACT);
+while(!ADCSC1_COCO); 
+
+((TWREG volatile*)(&AD1_OutV))->b.high = ADCRH; /* Save measured value */
+((TWREG volatile*)(&AD1_OutV))->b.low = ADCRL; /* Save measured value */
+
+*values = (word)((AD1_OutV));   /* Save measured values to the output buffer */
+
+return OK;
 }
 
-void SetDisp(byte disparo) {
+void SetDisp(word disparo) {
 
 byte band = 0;
-if(disparo == 0) {PTCD_PTCD0 = 1;
-band = 1;
-}
-if(disparo == 255) {PTCD_PTCD0 = 0;
-band = 1;
-}
-
 if(zc && !band)
 {
  ticks = 0;

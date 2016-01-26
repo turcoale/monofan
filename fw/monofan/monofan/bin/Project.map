@@ -26,18 +26,19 @@ EInt1.c.o                               Model: SMALL,         Lang: ANSI-C
 STARTUP SECTION
 ---------------------------------------------------------------------------------------------
 Entry point: 0xE004 (_EntryPoint)
-_startupData is allocated at 0xE086 and uses 6 Bytes
+_startupData is allocated at 0xE087 and uses 6 Bytes
 extern struct _tagStartup {
   unsigned nofZeroOut     1
-  _Range   pZeroOut       0xA0     9
-  _Copy    *toCopyDownBeg 0xE20F
+  _Range   pZeroOut       0xA0     12
+  _Copy    *toCopyDownBeg 0xE413
 } _startupData;
 
 *********************************************************************************************
 SECTION-ALLOCATION SECTION
 Section Name                    Size  Type     From       To       Segment
 ---------------------------------------------------------------------------------------------
-.text                            379     R     0xE094     0xE20E   ROM
+.text                            380     R     0xE095     0xE210   ROM
+.rodata                          514     R     0xE211     0xE412   ROM
 .abs_section_ffbd                  1     R     0xFFBD     0xFFBD   .absSeg0
 .abs_section_ffbf                  1     R     0xFFBF     0xFFBF   .absSeg1
 .abs_section_0                     1   N/I        0x0        0x0   .absSeg2
@@ -134,15 +135,15 @@ Section Name                    Size  Type     From       To       Segment
 .abs_section_1812                  2   N/I     0x1812     0x1813   .absSeg93
 .abs_section_1814                  2   N/I     0x1814     0x1815   .absSeg94
 .abs_section_ffc0                 64     R     0xFFC0     0xFFFF   .absSeg95
-.startData                        14     R     0xE086     0xE093   ROM
-.init                            134     R     0xE000     0xE085   ROM
-.common                            9   R/W       0xA0       0xA8   RAM
-.stack                            64   R/W       0xA9       0xE8   RAM
-.copy                              2     R     0xE20F     0xE210   ROM
+.startData                        14     R     0xE087     0xE094   ROM
+.init                            135     R     0xE000     0xE086   ROM
+.common                           12   R/W       0xA0       0xAB   RAM
+.stack                            64   R/W       0xAC       0xEB   RAM
+.copy                              2     R     0xE413     0xE414   ROM
 
 Summary of section sizes per section type:
-READ_ONLY (R):         253 (dec:      595)
-READ_WRITE (R/W):       49 (dec:       73)
+READ_ONLY (R):         457 (dec:     1111)
+READ_WRITE (R/W):       4C (dec:       76)
 NO_INIT (N/I):          6C (dec:      108)
 
 *********************************************************************************************
@@ -156,34 +157,34 @@ OBJECT-ALLOCATION SECTION
 ---------------------------------------------------------------------------------------------
 MODULE:                 -- Start08.c.o --
 - PROCEDURES:
-     loadByte                                  E094       E      14       5   .text       
-     Init                                      E0A2      6D     109       1   .text       
-     _Startup                                  E10F       9       9       1   .text       
+     loadByte                                  E095       E      14       5   .text       
+     Init                                      E0A3      6D     109       1   .text       
+     _Startup                                  E110       9       9       1   .text       
 - VARIABLES:
-     _startupData                              E086       6       6       4   .startData  
+     _startupData                              E087       6       6       4   .startData  
 - LABELS:
-     __SEG_END_SSTACK                            E9       0       0       1               
+     __SEG_END_SSTACK                            EC       0       0       1               
 MODULE:                 -- Cpu.c.o --
 - PROCEDURES:
      Cpu_Interrupt                             E000       4       4      28   .init       
      _EntryPoint                               E004      32      50       1   .init       
-     PE_low_level_init                         E036      50      80       1   .init       
+     PE_low_level_init                         E036      51      81       1   .init       
 - VARIABLES:
      NVPROT_INIT                               FFBD       1       1       0   .abs_section_ffbd
      NVOPT_INIT                                FFBF       1       1       0   .abs_section_ffbf
 MODULE:                 -- Cap1.c.o --
 - PROCEDURES:
-     Cap1_Init                                 E118      1C      28       1   .text       
-     Cap1_Interrupt                            E134       A      10       1   .text       
+     Cap1_Init                                 E119      1C      28       1   .text       
+     Cap1_Interrupt                            E135       A      10       1   .text       
 - VARIABLES:
 MODULE:                 -- IO_Map.c.o --
 - PROCEDURES:
 - VARIABLES:
      _PTAD                                        0       1       1       0   .abs_section_0
      _PTADD                                       1       1       1       2   .abs_section_1
-     _PTBD                                        2       1       1       1   .abs_section_2
-     _PTBDD                                       3       1       1       2   .abs_section_3
-     _PTCD                                        4       1       1       6   .abs_section_4
+     _PTBD                                        2       1       1       0   .abs_section_2
+     _PTBDD                                       3       1       1       1   .abs_section_3
+     _PTCD                                        4       1       1       5   .abs_section_4
      _PTCDD                                       5       1       1       1   .abs_section_5
      _ACMPSC                                      E       1       1       0   .abs_section_e
      _ADCSC1                                     10       1       1       2   .abs_section_10
@@ -257,7 +258,7 @@ MODULE:                 -- IO_Map.c.o --
      _PTCSE                                    1851       1       1       1   .abs_section_1851
      _PTCDS                                    1852       1       1       1   .abs_section_1852
      _GNGC                                     1853       1       1       1   .abs_section_1853
-     _ADCR                                       12       2       2       1   .abs_section_12
+     _ADCR                                       12       2       2       2   .abs_section_12
      _ADCCV                                      14       2       2       0   .abs_section_14
      _TPM1CNT                                    21       2       2       1   .abs_section_21
      _TPM1MOD                                    23       2       2       1   .abs_section_23
@@ -278,32 +279,33 @@ MODULE:                 -- Vectors.c.o --
      _vect                                     FFC0      40      64       0   .abs_section_ffc0
 MODULE:                 -- Events.c.o --
 - PROCEDURES:
-     Cap1_OnCapture                            E13E       6       6       1   .text       
-     TI1_OnInterrupt                           E144      11      17       1   .text       
-     EInt1_OnInterrupt                         E155       6       6       1   .text       
+     Cap1_OnCapture                            E13F       6       6       1   .text       
+     TI1_OnInterrupt                           E145      11      17       1   .text       
+     EInt1_OnInterrupt                         E156       3       3       1   .text       
 - VARIABLES:
 MODULE:                 -- monofan.c.o --
 - PROCEDURES:
-     main                                      E15B      1D      29       1   .text       
-     ReadSetTime                               E178       E      14       1   .text       
-     SetDisp                                   E186      48      72       1   .text       
-     Delay1s                                   E1CE      1E      30       1   .text       
-     ReadMode                                  E1EC       8       8       1   .text       
+     main                                      E159      28      40       1   .text       
+     ReadInput                                 E181      2B      43       1   .text       
+     SetDisp                                   E1AC      2C      44       1   .text       
+     Delay1s                                   E1D8      1E      30       1   .text       
 - VARIABLES:
+     temp                                      E211     202     514       1   .rodata     
      zc                                          A0       1       1       3   .common     
-     ticks                                       A1       2       2       6   .common     
+     ticks                                       A1       2       2       5   .common     
      actual                                      A3       2       2       2   .common     
      seg                                         A5       2       2       3   .common     
-     alarma                                      A7       1       1       2   .common     
-     mode                                        A8       1       1       1   .common     
+     mode                                        A7       1       1       1   .common     
+     AD1_OutV                                    A8       2       2       4   .common     
+     interm                                      AA       2       2       3   .common     
 MODULE:                 -- TI1.c.o --
 - PROCEDURES:
-     TI1_Init                                  E1F4       B      11       1   .text       
-     TI1_Interrupt                             E1FF       8       8       1   .text       
+     TI1_Init                                  E1F6       B      11       1   .text       
+     TI1_Interrupt                             E201       8       8       1   .text       
 - VARIABLES:
 MODULE:                 -- EInt1.c.o --
 - PROCEDURES:
-     EInt1_Interrupt                           E207       8       8       1   .text       
+     EInt1_Interrupt                           E209       8       8       1   .text       
 - VARIABLES:
 
 *********************************************************************************************
@@ -311,12 +313,12 @@ MODULE STATISTIC
   Name                                      Data   Code  Const
 ---------------------------------------------------------------------------------------------
   Start08.c.o                                  0    132      0
-  Cpu.c.o                                      0    134      2
+  Cpu.c.o                                      0    135      2
   Cap1.c.o                                     0     38      0
   IO_Map.c.o                                 108      0      0
   Vectors.c.o                                  0      0     64
-  Events.c.o                                   0     29      0
-  monofan.c.o                                  9    153      0
+  Events.c.o                                   0     26      0
+  monofan.c.o                                 12    157    514
   TI1.c.o                                      0     19      0
   EInt1.c.o                                    0      8      0
   other                                       64     14      2
@@ -326,12 +328,14 @@ SECTION USE IN OBJECT-ALLOCATION SECTION
 ---------------------------------------------------------------------------------------------
 SECTION: ".text"
   loadByte Init _Startup Cap1_Init Cap1_Interrupt Cap1_OnCapture 
-  TI1_OnInterrupt EInt1_OnInterrupt main ReadSetTime SetDisp Delay1s ReadMode 
-  TI1_Init TI1_Interrupt EInt1_Interrupt 
+  TI1_OnInterrupt EInt1_OnInterrupt main ReadInput SetDisp Delay1s TI1_Init 
+  TI1_Interrupt EInt1_Interrupt 
 SECTION: ".init"
   Cpu_Interrupt _EntryPoint PE_low_level_init 
+SECTION: ".rodata"
+  temp 
 SECTION: ".common"
-  zc ticks actual seg alarma mode 
+  zc ticks actual seg mode AD1_OutV interm 
 SECTION: ".abs_section_ffbd"
   NVPROT_INIT 
 SECTION: ".abs_section_ffbf"
@@ -531,14 +535,14 @@ OBJECT LIST SORTED BY ADDRESS
 ---------------------------------------------------------------------------------------------
      _PTAD                                        0       1       1       0   .abs_section_0
      _PTADD                                       1       1       1       2   .abs_section_1
-     _PTBD                                        2       1       1       1   .abs_section_2
-     _PTBDD                                       3       1       1       2   .abs_section_3
-     _PTCD                                        4       1       1       6   .abs_section_4
+     _PTBD                                        2       1       1       0   .abs_section_2
+     _PTBDD                                       3       1       1       1   .abs_section_3
+     _PTCD                                        4       1       1       5   .abs_section_4
      _PTCDD                                       5       1       1       1   .abs_section_5
      _ACMPSC                                      E       1       1       0   .abs_section_e
      _ADCSC1                                     10       1       1       2   .abs_section_10
      _ADCSC2                                     11       1       1       1   .abs_section_11
-     _ADCR                                       12       2       2       1   .abs_section_12
+     _ADCR                                       12       2       2       2   .abs_section_12
      _ADCCV                                      14       2       2       0   .abs_section_14
      _ADCCFG                                     16       1       1       1   .abs_section_16
      _APCTL1                                     17       1       1       0   .abs_section_17
@@ -588,11 +592,12 @@ OBJECT LIST SORTED BY ADDRESS
      _RTCCNT                                     6D       1       1       0   .abs_section_6d
      _RTCMOD                                     6E       1       1       3   .abs_section_6e
      zc                                          A0       1       1       3   .common     
-     ticks                                       A1       2       2       6   .common     
+     ticks                                       A1       2       2       5   .common     
      actual                                      A3       2       2       2   .common     
      seg                                         A5       2       2       3   .common     
-     alarma                                      A7       1       1       2   .common     
-     mode                                        A8       1       1       1   .common     
+     mode                                        A7       1       1       1   .common     
+     AD1_OutV                                    A8       2       2       4   .common     
+     interm                                      AA       2       2       3   .common     
      _SRS                                      1800       1       1       0   .abs_section_1800
      _SBDFR                                    1801       1       1       0   .abs_section_1801
      _SOPT1                                    1802       1       1       1   .abs_section_1802
@@ -630,23 +635,23 @@ OBJECT LIST SORTED BY ADDRESS
      _GNGC                                     1853       1       1       1   .abs_section_1853
      Cpu_Interrupt                             E000       4       4      28   .init       
      _EntryPoint                               E004      32      50       1   .init       
-     PE_low_level_init                         E036      50      80       1   .init       
-     loadByte                                  E094       E      14       5   .text       
-     Init                                      E0A2      6D     109       1   .text       
-     _Startup                                  E10F       9       9       1   .text       
-     Cap1_Init                                 E118      1C      28       1   .text       
-     Cap1_Interrupt                            E134       A      10       1   .text       
-     Cap1_OnCapture                            E13E       6       6       1   .text       
-     TI1_OnInterrupt                           E144      11      17       1   .text       
-     EInt1_OnInterrupt                         E155       6       6       1   .text       
-     main                                      E15B      1D      29       1   .text       
-     ReadSetTime                               E178       E      14       1   .text       
-     SetDisp                                   E186      48      72       1   .text       
-     Delay1s                                   E1CE      1E      30       1   .text       
-     ReadMode                                  E1EC       8       8       1   .text       
-     TI1_Init                                  E1F4       B      11       1   .text       
-     TI1_Interrupt                             E1FF       8       8       1   .text       
-     EInt1_Interrupt                           E207       8       8       1   .text       
+     PE_low_level_init                         E036      51      81       1   .init       
+     loadByte                                  E095       E      14       5   .text       
+     Init                                      E0A3      6D     109       1   .text       
+     _Startup                                  E110       9       9       1   .text       
+     Cap1_Init                                 E119      1C      28       1   .text       
+     Cap1_Interrupt                            E135       A      10       1   .text       
+     Cap1_OnCapture                            E13F       6       6       1   .text       
+     TI1_OnInterrupt                           E145      11      17       1   .text       
+     EInt1_OnInterrupt                         E156       3       3       1   .text       
+     main                                      E159      28      40       1   .text       
+     ReadInput                                 E181      2B      43       1   .text       
+     SetDisp                                   E1AC      2C      44       1   .text       
+     Delay1s                                   E1D8      1E      30       1   .text       
+     TI1_Init                                  E1F6       B      11       1   .text       
+     TI1_Interrupt                             E201       8       8       1   .text       
+     EInt1_Interrupt                           E209       8       8       1   .text       
+     temp                                      E211     202     514       1   .rodata     
      NVPROT_INIT                               FFBD       1       1       0   .abs_section_ffbd
      NVOPT_INIT                                FFBF       1       1       0   .abs_section_ffbf
      _vect                                     FFC0      40      64       0   .abs_section_ffc0
@@ -654,6 +659,11 @@ OBJECT LIST SORTED BY ADDRESS
 *********************************************************************************************
 UNUSED-OBJECTS SECTION
 ---------------------------------------------------------------------------------------------
+NOT USED PROCEDURES
+Events.c.o:
+  AD1_OnEnd 
+monofan.c.o:
+  ReadSetPoint ReadMode 
 NOT USED VARIABLES
 Cpu.c.o:
   CCR_reg 
@@ -661,7 +671,7 @@ Cpu.c.o:
 *********************************************************************************************
 COPYDOWN SECTION
 ---------------------------------------------------------------------------------------------
-------- ROM-ADDRESS: 0xE20F ---- SIZE       2 ---
+------- ROM-ADDRESS: 0xE413 ---- SIZE       2 ---
 Filling bytes inserted
  0000
 
@@ -679,13 +689,12 @@ Cap1_Init                 USES _TPM1SC _TPM1MOD _TPM1CNT _TPM1C0V _TPM1C0SC
 Cap1_Interrupt            USES _TPM1C0SC Cap1_OnCapture 
 Cap1_OnCapture            USES zc 
 TI1_OnInterrupt           USES ticks seg 
-EInt1_OnInterrupt         USES alarma 
-main                      USES PE_low_level_init alarma _PTCD Delay1s mode 
-                                ReadSetTime SetDisp ReadMode 
-ReadSetTime               USES _ADCCFG _ADCSC1 _ADCSC2 _ADCR 
-SetDisp                   USES _PTCD zc ticks actual 
+EInt1_OnInterrupt         USES _PTCD 
+main                      USES PE_low_level_init mode _PTCD Delay1s interm 
+                                ReadInput temp SetDisp 
+ReadInput                 USES _ADCCFG _ADCSC1 _ADCSC2 _ADCR AD1_OutV 
+SetDisp                   USES zc ticks _PTCD actual 
 Delay1s                   USES seg 
-ReadMode                  USES _PTBD 
 TI1_Init                  USES _RTCSC _RTCMOD 
 TI1_Interrupt             USES _RTCSC TI1_OnInterrupt 
 EInt1_Interrupt           USES _IRQSC EInt1_OnInterrupt 
@@ -707,11 +716,9 @@ DEPENDENCY TREE
  |  |       
  |  +- Delay1s             
  |  |    
- |  +- ReadSetTime         
+ |  +- ReadInput           
  |  |    
  |  +- SetDisp             
- |  |    
- |  +- ReadMode            
  |       
  +- _EntryPoint         
     | 
@@ -748,5 +755,5 @@ STATISTIC SECTION
 ExeFile:
 --------
 Number of blocks to be downloaded: 7
-Total size of all blocks to be downloaded: 595
+Total size of all blocks to be downloaded: 1111
 

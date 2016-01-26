@@ -24,7 +24,6 @@
 extern int ticks;
 extern byte zc;
 extern int seg;
-extern byte alarma;
 
 /* User includes (#include below this line is not maintained by Processor Expert) */
 
@@ -73,9 +72,28 @@ void TI1_OnInterrupt(void)
 
 void EInt1_OnInterrupt(void)
 {
- alarma = 1;
-
+ PTCD_PTCD0 = 1;
 }
+
+/*
+** ===================================================================
+**     Event       :  AD1_OnEnd (module Events)
+**
+**     Component   :  AD1 [ADC]
+**     Description :
+**         This event is called after the measurement (which consists
+**         of <1 or more conversions>) is/are finished.
+**         The event is available only when the <Interrupt
+**         service/event> property is enabled.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void AD1_OnEnd(void)
+{
+  /* Write your code here ... */
+}
+
 
 /* END Events */
 

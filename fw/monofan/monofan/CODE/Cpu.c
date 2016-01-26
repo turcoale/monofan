@@ -7,7 +7,7 @@
 **     Version   : Component 01.007, Driver 01.35, CPU db: 3.00.062
 **     Datasheet : MC9S08SH8 Rev. 3 6/2008
 **     Compiler  : CodeWarrior HCS08 C Compiler
-**     Date/Time : 18/01/2016, 12:29 p.m.
+**     Date/Time : 26/01/2016, 08:56 a.m.
 **     Abstract  :
 **         This bean "MC9S08SH8_20" contains initialization of the
 **         CPU and provides basic methods and events for CPU core
@@ -165,9 +165,9 @@ void PE_low_level_init(void)
   /* PTADD: PTADD5=0,PTADD0=0 */
   clrReg8Bits(PTADD, 0x21);             
   /* PTBPE: PTBPE6=0 */
-  clrReg8Bits(PTBPE, 0x00);             
+  clrReg8Bits(PTBPE, 0x40);             
   /* PTBDD: PTBDD6=0 */
-  clrReg8Bits(PTBDD, 0x00);             
+  clrReg8Bits(PTBDD, 0x40);             
   /* PTASE: PTASE4=0,PTASE3=0,PTASE2=0,PTASE1=0,PTASE0=0 */
   clrReg8Bits(PTASE, 0x1F);             
   /* PTBSE: PTBSE7=0,PTBSE6=0,PTBSE5=0,PTBSE4=0,PTBSE3=0,PTBSE2=0,PTBSE1=0,PTBSE0=0 */

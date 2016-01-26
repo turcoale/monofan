@@ -5,7 +5,7 @@
 **     Processor : MC9S08SH8CPJ
 **     Version   : Component 01.007, Driver 01.35, CPU db: 3.00.062
 **     Compiler  : CodeWarrior HCS08 C Compiler
-**     Date/Time : 18/01/2016, 11:38 a.m.
+**     Date/Time : 26/01/2016, 08:56 a.m.
 **     Abstract  :
 **         This bean "MC9S08SH8_20" contains initialization of the
 **         CPU and provides basic methods and events for CPU core
