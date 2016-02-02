@@ -91,7 +91,7 @@ FindScope=FROM_CURSOR
 FindHistory=0
 ReplaceHistory=0
 OpenFilesCount=0
-SelFile=F:\monofan\fw\monofan\monofan\CODE\monofan.c
+SelFile=
 SelLine=-1
 FileHistory=0
 
@@ -136,7 +136,7 @@ Rect=[0|0|0|0]
 [MemoryMap]
 Rect=[435|36|347|455]
 DisplayOnlyMemories=No
-WindowVisible=Yes
+WindowVisible=No
 
 [Browser]
 Rect=[0|0|0|0]

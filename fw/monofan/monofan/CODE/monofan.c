@@ -64,7 +64,7 @@ volatile unsigned char PGM[6]  = { 0xf7, 0x44, 0xf5, 0x27,0xfd, 0x81};
 byte ReadInput(word *values);
 byte ReadSetPoint(word *values);
 
-void SetDisp(int disparo);
+void SetDisp(word disparo);
 void Delay1s(byte segs);
 byte ReadMode(void);
 byte Flash_Erase_Page(word page);
