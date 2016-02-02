@@ -1,0 +1,10 @@
+Modificaciones para la nueva versión:
+
+* Pistas más grandes.
+* Incluir transformador bifásico.
+* Incluir sensor de corriente.
+* Mover preset.
+* Colocar jumper Modo programación.
+* Alejar pistas de disparo de SSR y de señal de cruce por cero.
+* Chequear tema ruido señal cruce por cero.
+

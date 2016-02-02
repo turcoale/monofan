@@ -7,7 +7,7 @@
 **     Version   : Component 01.007, Driver 01.35, CPU db: 3.00.062
 **     Datasheet : MC9S08SH8 Rev. 3 6/2008
 **     Compiler  : CodeWarrior HCS08 C Compiler
-**     Date/Time : 26/01/2016, 08:56 a.m.
+**     Date/Time : 01/02/2016, 08:41 a.m.
 **     Abstract  :
 **         This bean "MC9S08SH8_20" contains initialization of the
 **         CPU and provides basic methods and events for CPU core
@@ -33,6 +33,7 @@
 #include "TI1.h"
 #include "EInt1.h"
 #include "Bit2.h"
+#include "FLASH1.h"
 #include "PE_Types.h"
 #include "PE_Error.h"
 #include "PE_Const.h"
@@ -192,6 +193,8 @@ void PE_low_level_init(void)
   IRQSC_IRQACK = 0x01;
   IRQSC_IRQIE = 0x01;
   /* ### BitIO "Bit2" init code ... */
+  /* ### Init_FLASH "FLASH1" init code ... */
+  FLASH1_Init();
   __EI();                              /* Enable interrupts */
 }
 

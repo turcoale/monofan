@@ -27,6 +27,7 @@
 #include "TI1.h"
 #include "EInt1.h"
 #include "Bit2.h"
+#include "FLASH1.h"
 #include "Bit1.h"
 
 

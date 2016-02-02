@@ -421,12 +421,12 @@ asm(BGND);
           <Stack_size v="64"/>
         </enumgroup>
         <Set_memory_areas_default v="Click to set default &gt;"/>
-        <list name="ROM/RAM Areas" v="3">
+        <list name="ROM/RAM Areas" v="4">
           <group name="Memory Area0">
             <boolgroup name="ROM/RAM Area" v="Enabled">
               <Name v="ROM"/>
-              <Address v="57344"/>
-              <Size v="8110"/>
+              <Address v="57856"/>
+              <Size v="7598"/>
               <Qualifier v="READ_ONLY"/>
             </boolgroup>
           </group>
@@ -444,6 +444,14 @@ asm(BGND);
               <Address v="160"/>
               <Size v="480"/>
               <Qualifier v="READ_WRITE"/>
+            </boolgroup>
+          </group>
+          <group name="Memory Area3">
+            <boolgroup name="ROM/RAM Area" v="Enabled">
+              <Name v="STORAGE"/>
+              <Address v="57344"/>
+              <Size v="512"/>
+              <Qualifier v="PAGED"/>
             </boolgroup>
           </group>
         </list>
@@ -658,74 +666,6 @@ asm(BGND);
     </Methods>
 
     <Events>
-    </Events>
-  </Bean>
-
-  <Bean name="AD1" type="ADC">
-    <Enabled v="Y"/>
-
-    <Properties>
-      <Component_name v="AD1"/>
-      <A_D_converter v="ADC"/>
-      <Sharing v="Disabled"/>
-      <boolgroup name="Interrupt service/event" v="Enabled">
-        <A_D_interrupt v="Vadc"/>
-        <A_D_interrupt_priority v="medium priority"/>
-      </boolgroup>
-      <list name="A/D channels" v="1">
-        <group name="Channel0">
-          <A_D_channel__pin_ v="PTC3_ADP11"/>
-          <A_D_channel__pin__signal v=""/>
-        </group>
-      </list>
-      <A_D_resolution sel_value="10 bits" v="Autoselect"/>
-      <Conversion_time v="5.750 &#181;s"/>
-      <Low_power_mode v="Disabled"/>
-      <Sample_time v="short"/>
-      <Automatic_Compare v="Disabled"/>
-      <boolgroup name="Internal trigger" v="Disabled" />
-      <Number_of_conversions v="1"/>
-      <group name="Initialization">
-        <Enabled_in_init__code v="yes"/>
-        <Events_enabled_in_init_ v="yes"/>
-      </group>
-      <group name="CPU clock/speed selection">
-        <High_speed_mode v="This component enabled"/>
-        <Low_speed_mode v="This component disabled"/>
-        <Slow_speed_mode v="This component disabled"/>
-      </group>
-    </Properties>
-
-    <Methods>
-      <Enable v="don&apos;t generate code"/>
-      <Disable v="don&apos;t generate code"/>
-      <EnableEvent v="don&apos;t generate code"/>
-      <DisableEvent v="don&apos;t generate code"/>
-      <Start v="don&apos;t generate code"/>
-      <Stop v="don&apos;t generate code"/>
-      <Measure v="generate code"/>
-      <MeasureChan v="don&apos;t generate code"/>
-      <EnableIntChanTrigger v="don&apos;t generate code"/>
-      <GetValue v="don&apos;t generate code"/>
-      <GetChanValue v="don&apos;t generate code"/>
-      <GetValue8 v="don&apos;t generate code"/>
-      <GetChanValue8 v="don&apos;t generate code"/>
-      <GetValue16 v="generate code"/>
-      <GetChanValue16 v="don&apos;t generate code"/>
-      <EnableAsynchroClock v="don&apos;t generate code"/>
-      <DisableAsynchroClock v="don&apos;t generate code"/>
-      <EnableAutoCompare v="don&apos;t generate code"/>
-      <DisableAutoCompare v="don&apos;t generate code"/>
-    </Methods>
-
-    <Events>
-      <Event_module_name v="Events"/>
-      <event name="BeforeNewSpeed" v="don&apos;t generate code" />
-      <event name="AfterNewSpeed" v="don&apos;t generate code" />
-      <event name="OnEnd" v="generate code">
-        <Event_procedure_name v="AD1_OnEnd"/>
-        <Priority v="same as interrupt"/>
-      </event>
     </Events>
   </Bean>
 

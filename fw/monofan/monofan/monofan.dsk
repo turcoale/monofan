@@ -16,24 +16,24 @@ Rect=[-4|58|318|530]
 [CpuPanel]
 Status=Visible
 WindowState=NORMAL
-Rect=[500|88|500|300]
+Rect=[564|24|500|300]
 CpuPanViewMode=Default
 ViewSizeIndex=0
 
 [ErrorPanel]
 Status=Visible
 WindowState=NORMAL
-Rect=[0|524|500|88]
+Rect=[64|460|500|88]
 
 [ResourceMeter]
 Status=hiden
 WindowState=NORMAL
-Rect=[0|524|500|118]
+Rect=[64|460|500|118]
 
 [BeanSelector]
 Status=hiden
 WindowState=NORMAL
-Rect=[500|350|500|262]
+Rect=[564|286|500|262]
 BF_ForTgtCpuOnly=Yes
 BF_LicensedOnly=Yes
 BF_BA_AllQuestions=Yes
@@ -41,10 +41,10 @@ BF_BA_AllQuestions=Yes
 [ObjInspector]
 Status=Visible
 WindowState=NORMAL
-Rect=[0|88|1009|436]
+Rect=[21|92|1009|436]
 ObjInspectorDockedWithPrphInit=No
 ColWidth01=166
-ColWidth02=332
+ColWidth02=328
 ColWidth11=248
 ColWidth12=497
 ColWidth21=248
@@ -54,16 +54,16 @@ ColWidth32=497
 ColWidth41=248
 ColWidth42=497
 OptionsViewItemLevel=ADVANCED
-ViewItemLevel=BASIC
+ViewItemLevel=EXPERT
 
 [PrphInspector]
-Status=hiden
+Status=Visible
 WindowState=NORMAL
-Rect=[500|88|500|413]
-ViewMode=PrphUsageReport
+Rect=[1009|58|899|559]
+ViewMode=PrphRegInit
 SortRegsByAddr=Yes
 GroupRegisters=No
-Peripheral=
+Peripheral=CPU
 
 [Editor]
 Rect=[0|0|0|0]
@@ -134,9 +134,9 @@ WindowVisible=No
 Rect=[0|0|0|0]
 
 [MemoryMap]
-Rect=[0|0|0|0]
+Rect=[435|36|347|455]
 DisplayOnlyMemories=No
-WindowVisible=No
+WindowVisible=Yes
 
 [Browser]
 Rect=[0|0|0|0]

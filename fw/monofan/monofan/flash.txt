@@ -1,0 +1,29 @@
+volatile unsigned char PGM[6]  = { 0xf7, 0x44, 0xf5, 0x27,0xfd, 0x81}; 
+
+
+byte Flash_Erase_Page(word page) {
+
+asm {            
+	TPA         ; Get status to A
+        PSHA        ; Save current status
+        SEI         ; Disable interrupts
+        LDA  #0x30            STA  FSTAT  ;Clear FACCERR & FPVIOL flags            
+	LDHX  page            STA ,X      ; Save the data            
+	LDA  #$40   ; Erase command
+	STA  FCMD            LDA  #FSTAT_FCBEF_MASK      LDHX @FSTAT             JSR  PGM           PULA        ; Restore previous status            		TAP         
+    }
+
+return (FSTAT & 0x30);  }
+
+byte Flash_Program_Byte(word address, byte data) {        
+asM {
+	TPA	    ;              
+	PSHA        ; Save current status              
+	SEI         ; Disable interrupts
+	LDA  #0x30  ;
+        STA  FSTAT  ; Clear FACCERR & FPVIOL flags            LDHX  address            LDA  data            STA ,X      ; Save the data            	   LDA  #$20   ; Burn command            STA  FCMD            LDA  #FSTAT_FCBEF_MASK            LDHX @FSTAT             JSR   PGM            		PULA        ; Restore previous status            TAP         
+    }
+return (FSTAT & 0x30);  } 
+
+Flash_Erase_Page(0xEA00);
+(void) Flash_Program_Byte(0xEA00,0x01);        (void) Flash_Program_Byte(0xEA01,0x02);(void) Flash_Program_Byte(0xEA02,0x03);

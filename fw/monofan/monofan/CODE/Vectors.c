@@ -5,7 +5,7 @@
 **     Processor : MC9S08SH8CPJ
 **     Version   : Component 01.007, Driver 01.35, CPU db: 3.00.062
 **     Compiler  : CodeWarrior HCS08 C Compiler
-**     Date/Time : 26/01/2016, 08:56 a.m.
+**     Date/Time : 01/02/2016, 08:41 a.m.
 **     Abstract  :
 **         This bean "MC9S08SH8_20" contains initialization of the
 **         CPU and provides basic methods and events for CPU core
@@ -26,6 +26,7 @@
 #include "TI1.h"
 #include "EInt1.h"
 #include "Bit2.h"
+#include "FLASH1.h"
 extern near void _EntryPoint(void);
 
 void (* near const _vect[])(void) @0xFFC0 = { /* Interrupt vector table */

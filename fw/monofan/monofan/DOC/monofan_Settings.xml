@@ -421,12 +421,12 @@ asm(BGND);
           <Stack_size v="64"/>
         </enumgroup>
         <Set_memory_areas_default v="Click to set default &gt;"/>
-        <list name="ROM/RAM Areas" v="3">
+        <list name="ROM/RAM Areas" v="4">
           <group name="Memory Area0">
             <boolgroup name="ROM/RAM Area" v="Enabled">
               <Name v="ROM"/>
-              <Address v="57344"/>
-              <Size v="8110"/>
+              <Address v="57856"/>
+              <Size v="7598"/>
               <Qualifier v="READ_ONLY"/>
             </boolgroup>
           </group>
@@ -444,6 +444,14 @@ asm(BGND);
               <Address v="160"/>
               <Size v="480"/>
               <Qualifier v="READ_WRITE"/>
+            </boolgroup>
+          </group>
+          <group name="Memory Area3">
+            <boolgroup name="ROM/RAM Area" v="Enabled">
+              <Name v="STORAGE"/>
+              <Address v="57344"/>
+              <Size v="512"/>
+              <Qualifier v="PAGED"/>
             </boolgroup>
           </group>
         </list>
@@ -655,6 +663,39 @@ asm(BGND);
       <ClrVal v="don&apos;t generate code"/>
       <SetVal v="don&apos;t generate code"/>
       <NegVal v="don&apos;t generate code"/>
+    </Methods>
+
+    <Events>
+    </Events>
+  </Bean>
+
+  <Bean name="FLASH1" type="Init_FLASH">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Component_name v="FLASH1"/>
+      <Device v="IntFLASH"/>
+      <group name="Settings">
+        <group name="Clock settings">
+          <Divide_flash_clock_by_8 v="no"/>
+          <Clock_Divider v="20"/>
+          <Frequency__150kHz___200kHz_ v="200 kHz"/>
+        </group>
+        <group name="FLASH">
+          <enumgroup name="Security state" v="Disabled">
+          </enumgroup>
+          <enumgroup name="Protection" v="Disabled">
+          </enumgroup>
+          <Vector_redirection v="no"/>
+        </group>
+      </group>
+      <group name="Initialization">
+        <Call_Init_method v="yes"/>
+      </group>
+    </Properties>
+
+    <Methods>
+      <Init v="generate code"/>
     </Methods>
 
     <Events>

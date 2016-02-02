@@ -33,6 +33,11 @@ Module "Bit2"      (bean BitIO)
                 returned. If the direction is [output] then the last written value is returned (see <Safe mode> property for 
                 limitations). This method cannot be disabled if direction is [input].
 
+Module "FLASH1"    (bean Init_FLASH_HCS08)
+   - FLASH1_Init -This method initializes registers of the FLASH module according to this Peripheral Initialization settings. 
+                Call this method in user code to initialize the module. By default, the method is called by PE automatically; 
+                see "Call Init method" property of the component for more details.
+
 Module "Cpu"       (bean MC9S08SH8_20)
    - Cpu_EnableInt -Enables maskable interrupts
    - Cpu_DisableInt -Disables maskable interrupts
