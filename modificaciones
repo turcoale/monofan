@@ -4,7 +4,9 @@ Modificaciones para la nueva versión:
 * Incluir transformador bifásico.
 * Incluir sensor de corriente.
 * Mover preset.
-* Colocar jumper Modo programación.
+* Colocar jumper Modo programación.					x
 * Alejar pistas de disparo de SSR y de señal de cruce por cero.
 * Chequear tema ruido señal cruce por cero.
+* Agregar conector modo nocturno.					x
+* Revisar PADS								x
 
